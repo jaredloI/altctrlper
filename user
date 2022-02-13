@@ -1,0 +1,12 @@
+repeat wait() until game:IsLoaded()
+MainIDS = {
+     1106955848,
+     2781926589,
+     2404977420,
+     2898544219,
+     2214399326,
+}
+
+if table.find(MainIDS, game.Players.LocalPlayer.UserId) then
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/jaredloI/altctrlper/main/cntrl'))()
+end
