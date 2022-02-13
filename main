@@ -1,0 +1,8 @@
+repeat wait() until game:IsLoaded()
+MainIDS = {
+     1876752608,
+}
+
+if table.find(MainIDS, game.Players.LocalPlayer.UserId) then
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/i-reddd/other-scripts/main/SellingTool'))()
+end
